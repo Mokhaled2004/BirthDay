@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  /* Custom Birthday Colors */
+  --color-bday-pink: #ffafcc;
+  --color-bday-blue: #a2d2ff;
+  --color-bday-purple: #cdb4db;
+  
+  /* Modern Serif Font for that premium feel */
+  --font-serif: "Playfair Display", serif;
+}
+
+/* Optional: Add a smooth scroll and soft background to the whole body */
+body {
+  @apply bg-slate-50 text-slate-900 antialiased;
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+  .perspective-1200 {
+    perspective: 1200px;
+  }
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+}
+
+/* Keep everything else, but DELETE the .center-stack-fix block */
+
+/* Ensure the perspective container is properly set */
+@layer utilities {
+  .preserve-3d { transform-style: preserve-3d; }
+  .perspective-1200 { perspective: 1200px; }
+  .backface-hidden { backface-visibility: hidden; }
+}
+
+/* Custom Border Logic - Responsive */
+.border-left-150 { border-left-width: 100px; }
+.border-right-150 { border-right-width: 100px; }
+.border-top-110 { border-top-width: 75px; }
+.border-bottom-120 { border-bottom-width: 80px; }
+
+@media (min-width: 640px) {
+  .border-left-150 { border-left-width: 150px; }
+  .border-right-150 { border-right-width: 150px; }
+  .border-top-110 { border-top-width: 110px; }
+  .border-bottom-120 { border-bottom-width: 120px; }
+}

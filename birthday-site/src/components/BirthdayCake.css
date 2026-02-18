@@ -1,0 +1,182 @@
+.cake-section {
+    display: flex;
+    flex-direction: column;
+    height: 850px; /* Increased from 750px to provide headroom */
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f9f9;
+    overflow: hidden;
+    position: relative;
+}
+
+#birthday-cake {
+    position: relative;
+    top: 50px; /* Restored to your original centering */
+}
+
+/* Base Shadow/Plate */
+#birthday-cake:before {
+    content: "";
+    position: absolute;
+    background-color: #ede0d4;
+    width: 400px;
+    height: 140px;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -10%);
+    box-shadow: inset -2px -5px #e6ccb2;
+}
+
+.cake {
+    position: absolute;
+    background-color: #ddb892;
+    width: 350px;
+    height: 130px;
+    transform: translate(-50%, -60%);
+}
+
+.cake:before {
+    content: "";
+    position: absolute;
+    background-color: #ddb892;
+    width: 350px;
+    height: 50px;
+    border-radius: 50% 50% 50% 50% / 0% 0% 100% 100%;
+    top: 130px;
+}
+
+.top {
+    position: absolute;
+    background-color: #7f5539;
+    width: 350px;
+    height: 90px;
+    border-radius: 50%;
+    z-index: 2;
+    top: -45px;
+    box-shadow: inset -5px -1px #fff, inset -70px 2px rgba(255, 255, 255, .1);
+}
+
+.chocs {
+    position: absolute;
+    width: 55px;
+    height: 50px;
+    background-color: #7f5539;
+    top: 0;
+    z-index: 1;
+    border-radius: 50% 50% 50% 50% / 0% 0% 100% 100%;
+    box-shadow: 49px 20px #7f5539, 98px 25px #7f5539, 147px 30px #7f5539, 196px 25px #7f5539, 245px 20px #7f5539, 295px 0 #7f5539;
+}
+
+/* Normal Candle Sticks */
+.candles {
+    position: absolute;
+    width: 30px;
+    height: 80px;
+    background-color: #0081a7;
+    top: -160px;
+    left: -20px;
+    box-shadow: 50px 20px #0081a7, -50px 20px #0081a7;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.candles:before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 10px;
+    background-color: #0081a7;
+    border-radius: 50%;
+    top: -5px;
+    box-shadow: 0 80px #0081a7, -50px 20px #0081a7, -50px 100px #0081a7, 50px 20px #0081a7, 50px 100px #0081a7, inset 2px -1px #fff;
+}
+
+/* Flames */
+.flame, .flame2, .flame3 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    transform: rotate(-45deg);
+    background-color: rgba(252, 191, 73, .8);
+    border-radius: 80% 15% 55% 50% / 55% 15% 80% 50%;
+    animation: flame .5s infinite;
+    z-index: 11;
+}
+
+.flame { top: -40px; }
+.flame2 { top: -20px; left: -50px; }
+.flame3 { top: -20px; left: 50px; }
+
+@keyframes flame {
+    0%, 100% { transform: scaleY(1) rotate(-45deg); }
+    50% { transform: scaleY(1.1) rotate(-45deg); }
+}
+
+/* --- UPDATED BIRTHDAY TEXT --- */
+.birthday-message {
+    position: absolute;
+    width: 600px;
+    font-family: serif;
+    font-style: italic;
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: #004d4d;
+    left: -285px;
+    top: 100px;
+    opacity: 0;
+    text-align: center;
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    pointer-events: none;
+    z-index: 20;
+}
+
+.show-text {
+    opacity: 1;
+    top: -110px; /* Brought down from -140px so it stays within the new 850px height */
+}
+
+/* --- UPDATED INSTRUCTIONS --- */
+.instruction-container {
+    margin-top: 250px; /* Adjusted for the new section height */
+    text-align: center;
+}
+
+.instruction-text {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #008080;
+    opacity: 0.6;
+}
+
+/* --- MOBILE ADJUSTMENTS --- */
+@media (max-width: 768px) {
+    .birthday-message {
+        /* Center using transform instead of negative left */
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        
+        /* Smaller font for mobile screens */
+        font-size: 2.2rem !important; 
+        width: 90vw !important; /* Keep text within phone width */
+        
+        /* Move the starting position slightly higher */
+        top: 80px; 
+    }
+
+    .show-text {
+        /* Adjust final height so it doesn't hit the top of the phone */
+        top: -130px !important;
+    }
+
+    .cake-section {
+        height: 700px; /* Slimmer section for mobile */
+    }
+
+    /* Shrink the cake slightly if it overflows phone width */
+    #birthday-cake {
+        transform: scale(0.85);
+    }
+}
