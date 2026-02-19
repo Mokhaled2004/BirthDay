@@ -6,7 +6,8 @@ export const NightReflection = () => {
 
     return (
         <section
-            className={`py-32 transition-colors duration-1000 ease-in-out relative overflow-hidden ${isNight ? 'bg-[#002b2b]' : 'bg-white'
+            /* Changed bg-white to transparent and bg-[#002b2b] to a semi-transparent version */
+            className={`py-32 transition-colors duration-1000 ease-in-out relative overflow-hidden ${isNight ? 'bg-[#002b2b]/90 backdrop-blur-md' : 'bg-transparent'
                 }`}
         >
             <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
@@ -38,7 +39,7 @@ export const NightReflection = () => {
                             className="space-y-6"
                         >
                             <h2 className="text-[#004d4d] font-serif italic text-3xl">Still awake, Judi?</h2>
-                            <p className="text-gray-400 italic">Click the switch to dim the lights for a final message.</p>
+                            <p className="text-gray-500 italic">Click the switch to dim the lights for a final message.</p>
                         </motion.div>
                     ) : (
                         <motion.div

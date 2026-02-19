@@ -1,31 +1,32 @@
 .cake-section {
     display: flex;
     flex-direction: column;
-    height: 850px; /* Increased from 750px to provide headroom */
+    height: 850px;
     align-items: center;
     justify-content: center;
-    background-color: #f0f9f9;
+    /* Changed to transparent so BackgroundHearts shows through */
+    background-color: transparent; 
     overflow: hidden;
     position: relative;
 }
 
 #birthday-cake {
     position: relative;
-    top: 50px; /* Restored to your original centering */
+    top: 50px;
 }
 
-/* Base Shadow/Plate */
+/* Base Shadow/Plate - Made slightly transparent to blend with background */
 #birthday-cake:before {
     content: "";
     position: absolute;
-    background-color: #ede0d4;
+    background-color: rgba(237, 224, 212, 0.6); /* Added transparency */
     width: 400px;
     height: 140px;
     border-radius: 50%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -10%);
-    box-shadow: inset -2px -5px #e6ccb2;
+    box-shadow: inset -2px -5px rgba(230, 204, 178, 0.5);
 }
 
 .cake {
@@ -68,7 +69,6 @@
     box-shadow: 49px 20px #7f5539, 98px 25px #7f5539, 147px 30px #7f5539, 196px 25px #7f5539, 245px 20px #7f5539, 295px 0 #7f5539;
 }
 
-/* Normal Candle Sticks */
 .candles {
     position: absolute;
     width: 30px;
@@ -92,7 +92,6 @@
     box-shadow: 0 80px #0081a7, -50px 20px #0081a7, -50px 100px #0081a7, 50px 20px #0081a7, 50px 100px #0081a7, inset 2px -1px #fff;
 }
 
-/* Flames */
 .flame, .flame2, .flame3 {
     position: absolute;
     width: 30px;
@@ -113,7 +112,6 @@
     50% { transform: scaleY(1.1) rotate(-45deg); }
 }
 
-/* --- UPDATED BIRTHDAY TEXT --- */
 .birthday-message {
     position: absolute;
     width: 600px;
@@ -133,12 +131,11 @@
 
 .show-text {
     opacity: 1;
-    top: -110px; /* Brought down from -140px so it stays within the new 850px height */
+    top: -110px;
 }
 
-/* --- UPDATED INSTRUCTIONS --- */
 .instruction-container {
-    margin-top: 250px; /* Adjusted for the new section height */
+    margin-top: 250px;
     text-align: center;
 }
 
@@ -151,31 +148,23 @@
     opacity: 0.6;
 }
 
-/* --- MOBILE ADJUSTMENTS --- */
 @media (max-width: 768px) {
     .birthday-message {
-        /* Center using transform instead of negative left */
         left: 50% !important;
         transform: translateX(-50%) !important;
-        
-        /* Smaller font for mobile screens */
         font-size: 2.2rem !important; 
-        width: 90vw !important; /* Keep text within phone width */
-        
-        /* Move the starting position slightly higher */
+        width: 90vw !important;
         top: 80px; 
     }
 
     .show-text {
-        /* Adjust final height so it doesn't hit the top of the phone */
         top: -130px !important;
     }
 
     .cake-section {
-        height: 700px; /* Slimmer section for mobile */
+        height: 700px;
     }
 
-    /* Shrink the cake slightly if it overflows phone width */
     #birthday-cake {
         transform: scale(0.85);
     }

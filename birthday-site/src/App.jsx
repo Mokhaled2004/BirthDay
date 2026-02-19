@@ -12,6 +12,10 @@ import { MainCharacter } from './components/MainCharacter'; // 1. Import the new
 import { BirthdayCake } from './components/BirthdayCake';
 import { MusicPlayer } from './components/MusicPlayer'; // Import it
 import { Footer } from './components/Footer';
+import { SlideshowSection } from './components/SlideshowSection';
+import { SecretsJar } from './components/SecretsJar';
+import { GravitySecret } from './components/GravitySecret';
+
 function App() {
   useEffect(() => {
     fireConfetti();
@@ -39,7 +43,9 @@ function App() {
         <ReasonsGrid />
 
         <NightReflection />
-
+        <SlideshowSection /> {/* Place it here */}
+        <SecretsJar />
+        <GravitySecret />
         <Footer />
       </div>
 

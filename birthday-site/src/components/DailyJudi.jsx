@@ -1,5 +1,4 @@
-import { motion, useSpring, useMotionValue } from 'framer-motion';
-import { useRef, useState } from 'react';
+import { motion } from 'framer-motion';
 
 const STATS = [
     { label: "Breakfasts Missed", value: "0", detail: "Even if the house is burning" },
@@ -9,47 +8,13 @@ const STATS = [
 ];
 
 export const DailyJudi = () => {
-    const sectionRef = useRef(null);
-    const [isHovering, setIsHovering] = useState(false);
-
-    const mouseX = useMotionValue(0);
-    const mouseY = useMotionValue(0);
-
-    // Smooth physics for the croissant cursor
-    const cursorX = useSpring(mouseX, { stiffness: 1000, damping: 60 });
-    const cursorY = useSpring(mouseY, { stiffness: 1000, damping: 60 });
-
-    const handleMouseMove = (e) => {
-        if (!sectionRef.current) return;
-        // We track the client coordinates for the fixed-position cursor
-        mouseX.set(e.clientX);
-        mouseY.set(e.clientY);
-    };
-
     return (
         <section
-            ref={sectionRef}
-            onMouseMove={handleMouseMove}
-            onMouseEnter={() => setIsHovering(true)}
-            onMouseLeave={() => setIsHovering(false)}
-            /* hides the real mouse so the croissant takes over */
-            className="py-32 bg-white relative overflow-hidden cursor-none"
+            /* Removed: cursor-none, onMouseMove, and state triggers
+               Changed: bg-white/10 -> bg-transparent 
+            */
+            className="py-32 bg-transparent relative overflow-hidden"
         >
-            {/* --- THE CROISSANT CURSOR --- */}
-            {isHovering && (
-                <motion.div
-                    style={{
-                        x: cursorX,
-                        y: cursorY,
-                        left: 0,
-                        top: 0
-                    }}
-                    className="fixed pointer-events-none z-[100] text-4xl -ml-4 -mt-4 select-none"
-                >
-                    🥐
-                </motion.div>
-            )}
-
             <div className="max-w-5xl mx-auto px-6 relative z-10 pointer-events-none">
                 {/* Header */}
                 <div className="flex flex-col items-center mb-20 text-center">
@@ -59,7 +24,7 @@ export const DailyJudi = () => {
                     <h2 className="text-[#004d4d] font-serif italic text-4xl sm:text-5xl tracking-tight">
                         جودي باختصار
                     </h2>
-                    <p className="mt-4 text-gray-400 font-light italic text-sm">
+                    <p className="mt-4 text-gray-500 font-light italic text-sm">
                         Legend says if you find her in class before 10 AM, you're dreaming.
                     </p>
                     <div className="w-10 h-[1px] bg-[#b2d8d8] mt-8" />
@@ -84,7 +49,7 @@ export const DailyJudi = () => {
                             <h4 className="text-[#004d4d] text-[11px] font-bold uppercase tracking-[0.2em] mb-1">
                                 {stat.label}
                             </h4>
-                            <p className="text-gray-400 text-[10px] italic leading-tight px-4">
+                            <p className="text-gray-500 text-[10px] italic leading-tight px-4">
                                 {stat.detail}
                             </p>
                         </motion.div>
@@ -98,7 +63,7 @@ export const DailyJudi = () => {
                     transition={{ delay: 0.5 }}
                     className="mt-24 text-center px-6"
                 >
-                    <p className="text-[#008080] font-serif italic text-lg max-w-lg mx-auto opacity-60">
+                    <p className="text-[#008080] font-serif italic text-lg max-w-lg mx-auto opacity-70">
                         "A good heart, a funny soul, and always a full stomach—even if the professor is already on slide 40."
                     </p>
                 </motion.div>
