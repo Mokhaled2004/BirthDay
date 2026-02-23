@@ -2,29 +2,28 @@ import { motion } from 'framer-motion';
 
 // Data included directly to prevent ReferenceErrors
 const REASONS = [
-    "Your contagious laugh",
-    "Your golden heart",
-    "How you handle challenges",
-    "Your killer style",
-    "The way you listen",
-    "Your obsession with coffee",
-    "How you light up a room",
-    "Your resilience",
-    "Your taste in music",
-    "How you support friends",
-    "Your late-night talks",
-    "Your unique perspective",
-    "How you chase dreams",
-    "Your kindness to strangers",
-    "Your sense of humor",
-    "How you make tea",
-    "Your love for animals",
-    "Your creative soul",
-    "How you remember small details",
-    "Your bravery",
-    "Just being YOU"
+    "Your laugh that comes with full hand clapping sound effects",
+    "How you can argue with confidence even when you're billion% wrong",
+    "Your ability to eat like you’re feeding a small village",
+    "Your chaotic but somehow lovable sense of humor",
+    "How you always start studying exactly 48 hours before the exam",
+    "Your dramatic reactions to literally everything",
+    "The way you turn small moments into unforgettable memories",
+    "Your loyalty to the people you love",
+    "How you somehow make laziness look cute",
+    "Your unfiltered honesty",
+    "Your late-night conversations that last forever",
+    "Your confidence when debating (facts optional)",
+    "The way you laugh at your own jokes before anyone else does",
+    "Your comfort presence when someone needs support",
+    "Your ability to be both stubborn and soft at the same time",
+    "Your unpredictable energy",
+    "How you always keep life interesting",
+    "Your big heart hidden behind the chaos",
+    "The way you show up for your friends when it matters",
+    "Your completely unique personality",
+    "Just being Judi — there’s literally no one else like you"
 ];
-
 export const ReasonsGrid = () => {
     return (
         <section className="py-32 bg-[#f0f9f9]/50 overflow-hidden">

@@ -15,6 +15,9 @@ import { Footer } from './components/Footer';
 import { SlideshowSection } from './components/SlideshowSection';
 import { SecretsJar } from './components/SecretsJar';
 import { GravitySecret } from './components/GravitySecret';
+import { ScratchReveal } from './components/ScratchReveal'; // Import it
+import { MikesLetter } from './components/MikesLetter'; // Import it
+
 
 function App() {
   useEffect(() => {
@@ -45,7 +48,10 @@ function App() {
         <NightReflection />
         <SlideshowSection /> {/* Place it here */}
         <SecretsJar />
+        <MikesLetter />
         <GravitySecret />
+        <ScratchReveal />
+
         <Footer />
       </div>
 

@@ -1,12 +1,42 @@
 import { motion, useScroll, useSpring } from 'framer-motion';
 import { useRef } from 'react';
 
-const MILESTONES = [
-    { year: "2005", title: "The Journey Begins", desc: "A star was born, and the world got a little brighter." },
-    { year: "2010", title: "School Days", desc: "Making first friends and discovering big dreams." },
-    { year: "2018", title: "First Big Adventure", desc: "Stepping out of the comfort zone and finding new horizons." },
-    { year: "2023", title: "Growing Wings", desc: "Mastering the art of being yourself, unapologetically." },
-    { year: "2026", title: "Chapter 21", desc: "The best is yet to come. Cheers to your golden year!" },
+export const MILESTONES = [
+    {
+        year: "2005",
+        title: "The World Got Louder",
+        desc: "A girl with the biggest laugh and the biggest heart was born — and life has been more interesting ever since."
+    },
+    {
+        year: "2010",
+        title: "Tiny Human, Big Personality",
+        desc: "Already stubborn, already dramatic, already destined to argue with confidence."
+    },
+    {
+        year: "2022",
+        title: "College Era Activated",
+        desc: "New friendships, late nights, last-minute studying, and memories that will last forever."
+    },
+    {
+        year: "2023",
+        title: "The Rebirth of Gorlock the Destroyer",
+        desc: "A legendary era of chaos, unstoppable hunger, passionate debates, and treating the world like one giant sandwich."
+    },
+    {
+        year: "2024",
+        title: "Professional Procrastinator",
+        desc: "Mastering the art of starting to study exactly two days before the exam — and somehow surviving."
+    },
+    {
+        year: "2025",
+        title: "The Storm Phase",
+        desc: "A year of change, confusion, and growth — sometimes hurting others without meaning to, while trying to figure everything out."
+    },
+    {
+        year: "2026",
+        title: "Chapter 21 — Becoming Better",
+        desc: "Learning, healing, and choosing kindness again. Stronger, wiser, and still deeply loved. The best version is still unfolding."
+    }
 ];
 
 export const Timeline = () => {

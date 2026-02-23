@@ -27,13 +27,21 @@ export const Footer = () => {
                     <div className="h-px w-8 bg-[#008080]/20" />
                 </div>
 
-                {/* Closing Quote / Copyright Vibe */}
+                {/* Closing Quote */}
                 <p className="max-w-xs text-[10px] leading-relaxed text-[#004d4d]/30 font-light uppercase tracking-widest">
                     Designed to celebrate a soul that shines brighter than the stars.
                 </p>
             </div>
 
-            {/* Floating Hearts or Sparkles can be added here if needed */}
+            {/* Tiny Subtle Author Credit in the corner */}
+            <div className="absolute bottom-6 left-8 opacity-20 hover:opacity-100 transition-opacity duration-500">
+                <p className="font-mono text-[7px] tracking-[0.4em] text-[#004d4d] uppercase vertical-text">
+                    By Mike
+                </p>
+            </div>
+
+            {/* Subtle background glow */}
+            <div className="absolute -bottom-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-[#008080]/5 rounded-full blur-3xl pointer-events-none" />
         </footer>
     );
 };

@@ -98,9 +98,8 @@ export const GravitySecret = () => {
                                 You found it.
                             </h2>
                             <p className="text-[#008080] font-light leading-relaxed max-w-xs mx-auto">
-                                "Even when the world turns upside down,
-                                you'll always be my favorite person.
-                                Happy Birthday, Judi."
+                                "Even when the world turns upside down..,
+                                kefaya mo7n ya khalty fy eh"
                             </p>
                         </motion.div>
                     )}

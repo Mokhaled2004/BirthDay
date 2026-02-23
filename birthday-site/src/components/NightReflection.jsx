@@ -50,18 +50,36 @@ export const NightReflection = () => {
                         >
                             <h2 className="text-[#f0f9f9] font-serif italic text-5xl sm:text-6xl">Chapter 21</h2>
 
+                            <h2 className="text-[#f0f9f9] font-serif italic text-5xl sm:text-6xl">
+                                What We Want You To Know
+                            </h2>
+
                             <div className="space-y-8 text-[#b2d8d8] font-light leading-relaxed text-lg max-w-2xl mx-auto">
                                 <p>
-                                    They say time waits for no one, but somehow, you’ve made time wait for you.
-                                    Whether it's for breakfast or a lecture, you move at your own beautiful pace.
+                                    Judi, if there is one thing everyone agrees on, it’s that you bring something special
+                                    into every room you walk into. Your presence is comfort, your laughter is contagious,
+                                    and your heart is bigger than you probably realize.
                                 </p>
+
                                 <p>
-                                    At 21, the world starts asking you to hurry up. Don't.
-                                    Keep your golden heart, keep your "too late" entrances,
-                                    and never stop choosing breakfast over the rush.
+                                    You have this rare ability to make people feel seen, heard, and important.
+                                    Whether someone is having the best day or the worst one, you somehow know
+                                    how to make it better — just by being you.
                                 </p>
+
+                                <p>
+                                    Your kindness, your loyalty, and your genuine care for the people around you
+                                    do not go unnoticed. You are appreciated more than you think,
+                                    and loved more than you know.
+                                </p>
+
+                                <p>
+                                    We hope you never doubt your value, never question your worth,
+                                    and never forget how many people are grateful to have you in their lives.
+                                </p>
+
                                 <p className="font-serif text-2xl italic text-white pt-8">
-                                    The best years aren't ahead of you—they are happening right now.
+                                    The world is better with you in it — and we’re all lucky to know you.
                                 </p>
                             </div>
 
