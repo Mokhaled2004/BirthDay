@@ -4,38 +4,38 @@ import { useRef } from 'react';
 export const MILESTONES = [
     {
         year: "2005",
-        title: "The World Got Louder",
-        desc: "A girl with the biggest laugh and the biggest heart was born — and life has been more interesting ever since."
+        title: "ending the world with the sound of a whining baby",
+        desc: "pretty sure you were crying for a roumy sandwich or smth."
     },
     {
         year: "2010",
-        title: "Tiny Human, Big Personality",
-        desc: "Already stubborn, already dramatic, already destined to argue with confidence."
+        title: "evolved? hell yea, WITH the roumy sandwich",
+        desc: "calorie intake was pretty uncountable at the moment."
     },
     {
         year: "2022",
-        title: "College Era Activated",
-        desc: "New friendships, late nights, last-minute studying, and memories that will last forever."
+        title: "the unfortunate year where we crossed paths",
+        desc: "gave u the dry impression, and i hope u took a hint."
     },
     {
         year: "2023",
-        title: "The Rebirth of Gorlock the Destroyer",
-        desc: "A legendary era of chaos, unstoppable hunger, passionate debates, and treating the world like one giant sandwich."
+        title: "the rebirth of gorlock the destroyer",
+        desc: "an era full of kunafa bel eshta, basbosa, shay blaban+ cheddar, tho gym was consistent. DUH"
     },
     {
         year: "2024",
-        title: "Professional Procrastinator",
-        desc: "Mastering the art of starting to study exactly two days before the exam — and somehow surviving."
+        title: "unmatchable procrastinator",
+        desc: "here we got to observe judi leaving mikey alone but also smashing her keyboard out of rage pre-exams."
     },
     {
         year: "2025",
-        title: "The Storm Phase",
-        desc: "A year of change, confusion, and growth — sometimes hurting others without meaning to, while trying to figure everything out."
+        title: "el bheema phase",
+        desc: "ruining friendships just for being judi (unintentionally tho), ehh still figuring life out ig."
     },
     {
         year: "2026",
-        title: "Chapter 21 — Becoming Better",
-        desc: "Learning, healing, and choosing kindness again. Stronger, wiser, and still deeply loved. The best version is still unfolding."
+        title: " final uni year",
+        desc: "independent now? a bit yea. grades going up? oops, now we're asking too much."
     }
 ];
 

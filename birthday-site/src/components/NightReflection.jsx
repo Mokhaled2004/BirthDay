@@ -56,31 +56,26 @@ export const NightReflection = () => {
 
                             <div className="space-y-8 text-[#b2d8d8] font-light leading-relaxed text-lg max-w-2xl mx-auto">
                                 <p>
-                                    Judi, if there is one thing everyone agrees on, it’s that you bring something special
-                                    into every room you walk into. Your presence is comfort, your laughter is contagious,
-                                    and your heart is bigger than you probably realize.
+                                    judi, if theres one thing everyone agrees on, its that you bring something special into every room you walk into. whether its ur sandwiches, silly laugh, or just your presence, you never fail to put a smile on everyone's faces.
+
                                 </p>
 
                                 <p>
-                                    You have this rare ability to make people feel seen, heard, and important.
-                                    Whether someone is having the best day or the worst one, you somehow know
-                                    how to make it better — just by being you.
+
+                                    you have this rare ability to make everyone feel important even if you sometimes do the absolute opposite (we call dabsh), at the end of the day we know how much we truly matter to you just because of your special print you have on our hearts judi.
                                 </p>
 
                                 <p>
-                                    Your kindness, your loyalty, and your genuine care for the people around you
-                                    do not go unnoticed. You are appreciated more than you think,
-                                    and loved more than you know.
+                                    trust me if you think you're too kind for this world, maybe you are, but i promise you it never went unnoticed, especially to the ones who truly love you.
                                 </p>
 
                                 <p>
-                                    We hope you never doubt your value, never question your worth,
-                                    and never forget how many people are grateful to have you in their lives.
+
+                                    we hope you never doubt your value, never question your worth, and never forget how many people are grateful to have you in their lives.
                                 </p>
 
                                 <p className="font-serif text-2xl italic text-white pt-8">
-                                    The world is better with you in it — and we’re all lucky to know you.
-                                </p>
+                                    your presence in cs has ruined too many companies— stay alive twin                                </p>
                             </div>
 
                             <motion.div

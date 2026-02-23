@@ -25,36 +25,30 @@ function App() {
   }, []);
 
   return (
-    <main className="relative min-h-screen bg-white flex flex-col">
-      <MusicPlayer /> {/* Add it here */}
+    /* Added overflow-x-hidden here to stop the side-wiggle */
+    <main className="relative min-h-screen bg-white flex flex-col overflow-x-hidden">
+      <MusicPlayer />
       <BackgroundHearts />
 
       <Hero />
 
-      <div className="relative z-20 flex flex-col">
+      {/* Added w-full and overflow-hidden here as a secondary safety net */}
+      <div className="relative z-20 flex flex-col w-full overflow-x-hidden">
         <EnvelopeSection />
-
         <Timeline />
-
         <AlbumSection />
-
         <DailyJudi />
-
-        {/* 2. Place it here to break up the vertical flow with horizontal motion */}
         <MainCharacter />
         <BirthdayCake />
         <ReasonsGrid />
-
         <NightReflection />
-        <SlideshowSection /> {/* Place it here */}
+        <SlideshowSection />
         <SecretsJar />
         <MikesLetter />
         <GravitySecret />
         <ScratchReveal />
-
         <Footer />
       </div>
-
     </main>
   );
 }
